@@ -1,0 +1,310 @@
+{
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+a {
+  color: white;
+ }
+.dessus {
+ color: rgba(255, 183, 0, 1) ;
+ } 
+.v39_3 {
+  width: 100%;
+  height: 1024px;
+  background: rgba(208,163,48,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v39_4 {
+  width: 100%;
+  height: 150px;
+  background: rgba(0,0,0,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v40_12 {
+  width: 158px;
+  color: rgba(255,183,0,1);
+  position: absolute;
+  top: 43px;
+  left: 1251px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 24px;
+  opacity: 1;
+  text-align: center;
+}
+.v40_11 {
+  width: 109px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 54px;
+  left: 1119px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 24px;
+  opacity: 1;
+  text-align: center;
+}
+.v39_10 {
+  width: 174px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 52px;
+  left: 922px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 24px;
+  opacity: 1;
+  text-align: center;
+}
+.v39_9 {
+  width: 146px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 42px;
+  left: 753px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 24px;
+  opacity: 1;
+  text-align: center;
+}
+.v39_8 {
+  width: 131px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 54px;
+  left: 598px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 24px;
+  opacity: 1;
+  text-align: center;
+}
+.v39_6 {
+  width: 533px;
+  height: 150px;
+  background: url("../assets/download-9.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v39_7 {
+  width: 206px;
+  color: rgba(255,183,0,1);
+  position: absolute;
+  top: 0px;
+  left: 158px;
+  font-family: IM FELL Great Primer SC;
+  font-weight: Regular;
+  font-size: 52px;
+  opacity: 1;
+  text-align: center;
+}
+.v39_5 {
+  width: 100%;
+  height: 192px;
+  background: rgba(0,0,0,1);
+  opacity: 1;
+  position: absolute;
+  top: 832px;
+  left: 0px;
+  overflow: hidden;
+}
+.v40_20 {
+  width: 149px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 861px;
+  left: 31px;
+  font-family: Inder;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+}
+.v40_19 {
+  width: 149px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 861px;
+  left: 189px;
+  font-family: Inder;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+}
+.v40_18 {
+  width: 149px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 861px;
+  left: 360px;
+  font-family: Inder;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+}
+.v40_17 {
+  width: 149px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 861px;
+  left: 507px;
+  font-family: Inder;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+}
+.v40_16 {
+  width: 149px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 863px;
+  left: 677px;
+  font-family: Inder;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+}
+.v40_15 {
+  width: 97px;
+  height: 96px;
+  background: url("../assets/Instagram_icon.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 897px;
+  left: 960px;
+  overflow: hidden;
+}
+.v40_14 {
+  width: 322px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 832px;
+  left: 932px;
+  font-family: Inder;
+  font-weight: Regular;
+  font-size: 40px;
+  opacity: 1;
+  text-align: center;
+}
+.v40_13 {
+  width: 160px;
+  color: rgba(255,183,0,1);
+  position: absolute;
+  top: 922px;
+  left: 1280px;
+  font-family: IM FELL Great Primer SC;
+  font-weight: Regular;
+  font-size: 34px;
+  opacity: 1;
+  text-align: center;
+}
+.v40_21 {
+  width: 355px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 167px;
+  left: 32px;
+  font-family: Inder;
+  font-weight: Regular;
+  font-size: 40px;
+  opacity: 1;
+  text-align: center;
+}
+.v40_23 {
+  width: 506px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 234px;
+  left: 61px;
+  font-family: Inder;
+  font-weight: Regular;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+}
+.v41_24 {
+  width: 536px;
+  height: 397px;
+  background: rgba(217,217,217,1);
+  opacity: 1;
+  position: absolute;
+  top: 254px;
+  left: 710px;
+  border: 3px solid rgba(0,0,0,1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.v42_25 {
+  width: 536px;
+  height: 398px;
+  background: url("../assets/spa.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 253px;
+  left: 710px;
+  overflow: hidden;
+}
+.v42_26 {
+  width: 521px;
+  height: 323px;
+  background: rgba(217,217,217,1);
+  opacity: 1;
+  position: absolute;
+  top: 461px;
+  left: 61px;
+  border: 3px solid rgba(0,0,0,1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.v42_27 {
+  width: 521px;
+  height: 322px;
+  background: url("../assets/download-19.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 462px;
+  left: 61px;
+  overflow: hidden;
+}
+.v49_53 {
+  width: 197px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 952px;
+  left: 336px;
+  font-family: Inder;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+}
