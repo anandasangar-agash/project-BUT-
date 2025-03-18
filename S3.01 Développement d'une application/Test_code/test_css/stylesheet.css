@@ -1,0 +1,92 @@
+/* FONTS */
+@font-face { font-family: "Montserrat"; src: url('../fonts/Montserrat-Regular.ttf'); }
+@font-face { font-family: "WorkSans"; src: url('../fonts/WorkSans-Regular.ttf'); }
+
+/* COULEURS */
+:root{
+  --bleu_primaire: #293358;
+  --or_primaire:#8b7d6d;
+  --blanc:#ffffff;
+  --bleu_secodaire:#354878;
+  --or_secondaire:#ad947e;
+}
+
+/* FOND */
+body {
+    background-color: var(--bleu_primaire); /* Le fond de la page sera bleue */
+    color: white; /* Le texte de la page sera blanc */
+    margin: 0px;
+}
+
+header 
+{
+	position: relative;
+  padding: 10px;
+	width: 100%;
+  height: 50px;
+	background-color: var(--or_primaire);
+}
+
+.logotype{
+  position: fixed; /* evite que les autres elements du header bouge */
+  top: -10px;
+}
+
+/* Menu Sidenav */
+.sidenav {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 1550px;
+    padding-top: 85px;
+    transition: left 0.5s ease;
+  }
+  
+  /* Liens menu sidenav */
+  .sidenav a {
+    padding: 8px 8px 8px 32px; /* haut / droite / bas / gauche */
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--or_secondaire);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+  color: var(--blanc);
+  }
+  
+  .sidenav ul {
+    text-align: end;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Où ca s'ouvre */
+  .sidenav.active {
+    left: 1220px;
+  }
+  
+  /* bouton fermer */
+  .sidenav .fermer {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  /* Icône burger */
+  .burger-icon span {
+    position: relative;
+    top: 7px;
+    left: 1470px;
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: var(--blanc);
+    margin: 6px 0;
+  }
+  

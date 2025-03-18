@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title> test </title>
+		<link rel="stylesheet" href="stylesheet.css"/>
+	</head>
+	<body>
+
+    <header>
+
+        <a href="#" id="ouvrirbtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </a>
+
+    </header>
+
+        <div id="burger" class="sidenav">
+            <a id="fermerbtn" href="#" class="fermer">×</a>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Profil personnel</a></li>
+                <li><a href="#">Déclarations heures</a></li>
+                <li><a href="#">Consultation heures</a></li>
+                <li><a href="#">Demandes</a></li>
+                <li><a href="#">Liste des utilisateurs</a></li>
+                <li><a href="#">Assistance</a></li>
+            </ul>
+        </div>
+  
+        <script>
+            var sidenav = document.getElementById("burger");
+            var ouvrirBtn = document.getElementById("ouvrirbtn");
+            var fermerBtn = document.getElementById("fermerbtn");
+        
+            ouvrirBtn.onclick = openNav;
+            fermerBtn.onclick = closeNav;
+        
+            /* Largeur de la barre de navigation latérale sur 250px */
+            function openNav() {
+                sidenav.classList.add("active");
+            }
+        
+            /* Largeur de la barre de navigation latérale sur 0 */
+            function closeNav() {
+                sidenav.classList.remove("active");
+            }
+        </script>
+        
+    </body>
+</html>
+  
