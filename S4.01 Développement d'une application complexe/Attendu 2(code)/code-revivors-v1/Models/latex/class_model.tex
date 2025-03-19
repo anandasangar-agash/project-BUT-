@@ -1,0 +1,835 @@
+\doxysection{Model Class Reference}
+\hypertarget{class_model}{}\label{class_model}\index{Model@{Model}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_model_a3ec2a0cd5bfa46a68490cb193eed99d9}{create\+Personne}} (\$nom, \$prenom, \$email, \$mdp)
+\item 
+\mbox{\hyperlink{class_model_aec7efa8b01055730d2b0b58b4a29569d}{get\+Dashboard\+Gestionnaire}} ()
+\item 
+\mbox{\hyperlink{class_model_a2ed37314dc6e163400030e8f6cf9767d}{get\+All\+Composantes}} ()
+\item 
+\mbox{\hyperlink{class_model_a13ed4a2f759e50232d833e828cb552d2}{get\+All\+Commerciaux}} ()
+\item 
+\mbox{\hyperlink{class_model_a7f313499fb87bcac19a72fadb4cb4623}{get\+All\+Prestataires}} ()
+\item 
+\mbox{\hyperlink{class_model_a2e0340baf70e4d62ec6caf2257524fcf}{get\+All\+Clients}} ()
+\item 
+\mbox{\hyperlink{class_model_a0059f66bd4640daa435e230a142d49c0}{get\+All\+Gestionnaires}} ()
+\item 
+\mbox{\hyperlink{class_model_a1da1a231c36c6becef2b332a21bf8e1b}{get\+Infos\+Personne}} (\$id)
+\item 
+\Hypertarget{class_model_a9e3e53e7fc2300adab557e063991d946}\label{class_model_a9e3e53e7fc2300adab557e063991d946} 
+{\bfseries get\+Type\+Voie} ()
+\item 
+\Hypertarget{class_model_a97d8069c14a8e4d2eacc2a6d04c8c9f9}\label{class_model_a97d8069c14a8e4d2eacc2a6d04c8c9f9} 
+{\bfseries get\+Id\+Type\+Voie} (\$libelle)
+\item 
+\mbox{\hyperlink{class_model_a48709b42e377523b696a5cc05d415b05}{get\+Id\+Composante}} (\$composante)
+\item 
+\Hypertarget{class_model_af6a7eb81cbf6c006ae68a00b59cfd196}\label{class_model_af6a7eb81cbf6c006ae68a00b59cfd196} 
+{\bfseries get\+Id\+Personne} (\$email)
+\item 
+\Hypertarget{class_model_a615e05e2aafa21530002a91a9f2c49bc}\label{class_model_a615e05e2aafa21530002a91a9f2c49bc} 
+{\bfseries get\+Id\+Composante\+By\+Id\+Client} (\$id\+\_\+client)
+\item 
+\mbox{\hyperlink{class_model_a11374e7e5ac7890a2d3a17652a678813}{get\+Infos\+Composante}} (\$id)
+\item 
+\mbox{\hyperlink{class_model_aebfb147067b24b6ed229b94c28b95888}{get\+Prestataires\+Composante}} (\$id)
+\item 
+\mbox{\hyperlink{class_model_aa42a494bc03206d39e6fc59a7560df57}{get\+Commerciaux\+Composante}} (\$id)
+\item 
+\mbox{\hyperlink{class_model_a0b5a4ab01a3fcbd64ad2a1f0f8e391c8}{get\+Interlocuteurs\+Composante}} (\$id)
+\item 
+\mbox{\hyperlink{class_model_a126a839a45f31c4129d1f6d5e369ec8a}{get\+Bdl\+Composante}} (\$id\+\_\+composante)
+\item 
+\mbox{\hyperlink{class_model_a02d45d041f88445b9855550e073060cf}{get\+Interlocuteurs\+Societe}} (\$id)
+\item 
+\mbox{\hyperlink{class_model_aecc0177eec676cf35793179a9f66cef4}{get\+Infos\+Societe}} (\$id)
+\item 
+\mbox{\hyperlink{class_model_a1c13c67981cba862362e461db6a76fea}{get\+Composantes\+Societe}} (\$id)
+\item 
+\mbox{\hyperlink{class_model_ab19d4f01841cc9e117560789ac16dd2c}{assigner\+Interlocuteur\+Composante}} (\$composante, \$client, \$email)
+\item 
+\mbox{\hyperlink{class_model_ad091b01e2de037058912eb6a1aadba02}{assigner\+Interlocuteur\+Composante\+By\+Id\+Composante}} (\$id\+\_\+composante, \$id\+\_\+personne)
+\item 
+\mbox{\hyperlink{class_model_a402be1934aade19a462195aecc34b8e4}{assigner\+Interlocuteur\+Composante\+By\+Id\+Client}} (\$id\+\_\+personne, \$composante)
+\item 
+\mbox{\hyperlink{class_model_aba1750d96b16a962614631863850c9a2}{add\+Prestataire}} (\$email)
+\item 
+\mbox{\hyperlink{class_model_a12f01889fe44579e53f9b097b41e63dc}{add\+Interlocuteur}} (\$email)
+\item 
+\mbox{\hyperlink{class_model_af3ed117ffa7e073bd56fb944c5412fb4}{add\+Commercial}} (\$email)
+\item 
+\mbox{\hyperlink{class_model_a4c73e6ecb92786edae8d47a9bd1bfaa2}{add\+Gestionnaire}} (\$email)
+\item 
+\mbox{\hyperlink{class_model_a44cdeff512c15198a35dec894df3831b}{add\+Client}} (\$client, \$tel)
+\item 
+\mbox{\hyperlink{class_model_affcd40b767214b9ba1f46aca08604bb1}{add\+Composante}} (\$libelle\+Voie, \$id\+\_\+type\+\_\+voie, \$cp, \$num\+Voie, \$nom\+Voie, \$nom\+\_\+client, \$nom\+\_\+compo)
+\item 
+\mbox{\hyperlink{class_model_a2050f891fcf5bfdf176ca691c1b02535}{add\+Mission}} (\$type, \$nom, \$date, \$nom\+\_\+client, \$id\+\_\+composante)
+\item 
+\mbox{\hyperlink{class_model_a862ce430ebdddb3975fe397845e461c8}{add\+Nb\+Heure\+Activite}} (\$commentaire, \$id\+\_\+bdl, \$id\+\_\+personne, \$date\+\_\+bdl, \$nb\+\_\+heure)
+\item 
+\mbox{\hyperlink{class_model_a91453c35c34167bbe7cb6339683fcccb}{add\+Demi\+Journee}} (\$commentaire, \$id\+\_\+bdl, \$id\+\_\+personne, \$date\+\_\+bdl, \$nb\+\_\+dj)
+\item 
+\mbox{\hyperlink{class_model_af0311e2810c434012d11e55a71cb8e9a}{add\+Journee\+Jour}} (\$commentaire, \$id\+\_\+bdl, \$id\+\_\+personne, \$date\+\_\+bdl, \$nb\+\_\+jour)
+\item 
+\mbox{\hyperlink{class_model_afd0de36421f9848770199b5cc221e3e0}{add\+Bdl\+In\+Mission}} (\$nom\+\_\+mission, \$nom\+\_\+composante, \$mois, \$id\+\_\+prestataire)
+\item 
+\mbox{\hyperlink{class_model_a636d8e502d7b25f53012145ea2644603}{assigner\+Prestataire}} (\$email, \$mission, \$id\+\_\+composante)
+\item 
+\mbox{\hyperlink{class_model_a26443a0cd14eb4d53e91fca8ec1a3906}{assigner\+Commercial}} (\$email, \$composante, \$client)
+\item 
+\Hypertarget{class_model_a16ba8da138f1805a8418d2b32345b700}\label{class_model_a16ba8da138f1805a8418d2b32345b700} 
+{\bfseries assigner\+Commercial\+By\+Id\+Composante} (\$email, \$id\+\_\+composante)
+\item 
+\Hypertarget{class_model_a77e73aa78d2043234c1168652cf53dcb}\label{class_model_a77e73aa78d2043234c1168652cf53dcb} 
+{\bfseries get\+All\+Bdl\+Prestataire} (\$id\+\_\+pr)
+\item 
+\Hypertarget{class_model_adc2a1a33f71aea882c8c45f38e7aa52d}\label{class_model_adc2a1a33f71aea882c8c45f38e7aa52d} 
+{\bfseries get\+All\+Nb\+Heure\+Activite} (\$id\+\_\+bdl)
+\item 
+\Hypertarget{class_model_a694f65da7b3e52c8bdd05b497316432b}\label{class_model_a694f65da7b3e52c8bdd05b497316432b} 
+{\bfseries get\+All\+Demi\+Jour\+Activite} (\$id\+\_\+bdl)
+\item 
+\Hypertarget{class_model_aee974f41e68bdcc5fbbd71dd638b644e}\label{class_model_aee974f41e68bdcc5fbbd71dd638b644e} 
+{\bfseries get\+All\+Jour\+Activite} (\$id\+\_\+bdl)
+\item 
+\Hypertarget{class_model_a1a82f1c6d9cd39dd934b02e46b181891}\label{class_model_a1a82f1c6d9cd39dd934b02e46b181891} 
+{\bfseries set\+Est\+Valide\+Bdl} (\$id\+\_\+bdl, \$id\+\_\+interlocuteur, \$valide)
+\item 
+\Hypertarget{class_model_ab744631d028a66c3c844095ccbc03a46}\label{class_model_ab744631d028a66c3c844095ccbc03a46} 
+{\bfseries set\+Nom\+Personne} (\$id, \$nom)
+\item 
+\Hypertarget{class_model_ad46fee266ee65c203f47eeb447e44926}\label{class_model_ad46fee266ee65c203f47eeb447e44926} 
+{\bfseries set\+Prenom\+Personne} (\$id, \$prenom)
+\item 
+\Hypertarget{class_model_ad40edc228bd3f591a25558d9e3ace03e}\label{class_model_ad40edc228bd3f591a25558d9e3ace03e} 
+{\bfseries set\+Email\+Personne} (\$id, \$email)
+\item 
+\Hypertarget{class_model_a5508ae06cd1f56437ca9b0696e0dad56}\label{class_model_a5508ae06cd1f56437ca9b0696e0dad56} 
+{\bfseries set\+Mdp\+Personne} (\$id, \$mdp)
+\item 
+\Hypertarget{class_model_abbe8010ba1b075fbdbeac1e843f6a0e0}\label{class_model_abbe8010ba1b075fbdbeac1e843f6a0e0} 
+{\bfseries set\+Nom\+Client} (\$id, \$nom)
+\item 
+\Hypertarget{class_model_a8695ad48c4c935e6695a7276a6772609}\label{class_model_a8695ad48c4c935e6695a7276a6772609} 
+{\bfseries set\+Tel\+Client} (\$id, \$tel)
+\item 
+\Hypertarget{class_model_a569ae5ec673ac4e3a7e1164d6aeca4e9}\label{class_model_a569ae5ec673ac4e3a7e1164d6aeca4e9} 
+{\bfseries set\+Nom\+Composante} (\$id, \$nom)
+\item 
+\Hypertarget{class_model_a1d3b622c2096f47739e29e503123715c}\label{class_model_a1d3b622c2096f47739e29e503123715c} 
+{\bfseries set\+Numero\+Adresse} (\$id, \$num)
+\item 
+\Hypertarget{class_model_aa210cdbeedcbd508392cf8859c8229b9}\label{class_model_aa210cdbeedcbd508392cf8859c8229b9} 
+{\bfseries set\+Nom\+Voie\+Adresse} (\$id, \$nom)
+\item 
+\Hypertarget{class_model_acbe549b0ec3211391937a7a1bc1e023e}\label{class_model_acbe549b0ec3211391937a7a1bc1e023e} 
+{\bfseries set\+Cp\+Localite} (\$id, \$cp)
+\item 
+\Hypertarget{class_model_a1030d2439e3cd1778a632fb005204bf8}\label{class_model_a1030d2439e3cd1778a632fb005204bf8} 
+{\bfseries set\+Ville\+Localite} (\$id, \$ville)
+\item 
+\Hypertarget{class_model_a446c1f85132309d8688e61e09e1afc7c}\label{class_model_a446c1f85132309d8688e61e09e1afc7c} 
+{\bfseries set\+Libelle\+Typevoie} (\$id, \$libelle)
+\item 
+\Hypertarget{class_model_a9cde4dfd6316b48826d07ef38423f1c8}\label{class_model_a9cde4dfd6316b48826d07ef38423f1c8} 
+{\bfseries set\+Client\+Composante} (\$id, \$client)
+\item 
+\Hypertarget{class_model_a63d63a1889c049d82b97f629d5d90eb2}\label{class_model_a63d63a1889c049d82b97f629d5d90eb2} 
+{\bfseries set\+Commentaire\+Activite} (\$id, \$commentaire)
+\item 
+\Hypertarget{class_model_a4b95b00c699ba8c532f05ede0a52665f}\label{class_model_a4b95b00c699ba8c532f05ede0a52665f} 
+{\bfseries set\+Date\+Bdl\+Activite} (\$id, \$date)
+\item 
+\Hypertarget{class_model_ab90159cc3ffc2dca042fb13c1a6d3e9d}\label{class_model_ab90159cc3ffc2dca042fb13c1a6d3e9d} 
+{\bfseries set\+Nb\+Heure} (\$id, \$heure)
+\item 
+\Hypertarget{class_model_a7c999ea07de27afa55b2999877e2460c}\label{class_model_a7c999ea07de27afa55b2999877e2460c} 
+{\bfseries set\+Debut\+Heure\+Plage\+Horaire} (\$id, \$heure)
+\item 
+\Hypertarget{class_model_a0d45f4cea1576d185bd8e484ed3f1ca7}\label{class_model_a0d45f4cea1576d185bd8e484ed3f1ca7} 
+{\bfseries set\+Fin\+Heure\+Plage\+Horaire} (\$id, \$heure)
+\item 
+\Hypertarget{class_model_a2abe3fcbf554f7e906062ec259d0b196}\label{class_model_a2abe3fcbf554f7e906062ec259d0b196} 
+{\bfseries set\+Demi\+Journee} (\$id, \$demi\+\_\+journee)
+\item 
+\Hypertarget{class_model_ae18ca26da16669e637d6b94576754901}\label{class_model_ae18ca26da16669e637d6b94576754901} 
+{\bfseries set\+Journee\+Jour} (\$id, \$jour)
+\item 
+\Hypertarget{class_model_a84bbe869bbe5ba77b167b768725b71c0}\label{class_model_a84bbe869bbe5ba77b167b768725b71c0} 
+{\bfseries set\+Debut\+Heure\+Supp\+Jour} (\$id, \$debut)
+\item 
+\Hypertarget{class_model_a2df050cb43adf61ec457163bc7a3cac2}\label{class_model_a2df050cb43adf61ec457163bc7a3cac2} 
+{\bfseries set\+Fin\+Heure\+Supp\+Jour} (\$id, \$fin)
+\item 
+\Hypertarget{class_model_af4447be706ec4539e7b0b1437397678d}\label{class_model_af4447be706ec4539e7b0b1437397678d} 
+{\bfseries get\+Dashboard\+Commercial} (\$id\+\_\+co)
+\item 
+\Hypertarget{class_model_a805805819d9026a66acb77991e8bf66e}\label{class_model_a805805819d9026a66acb77991e8bf66e} 
+{\bfseries get\+Dashboard\+Prestataire} (\$id\+\_\+prestataire)
+\item 
+\Hypertarget{class_model_a73900ed23f7e75048f0d18de051aa27e}\label{class_model_a73900ed23f7e75048f0d18de051aa27e} 
+{\bfseries get\+Interlocuteur\+For\+Commercial} (\$id\+\_\+co)
+\item 
+\Hypertarget{class_model_adfcae8782addf751eb504d71fcc5880f}\label{class_model_adfcae8782addf751eb504d71fcc5880f} 
+{\bfseries get\+Prestataire\+For\+Commercial} (\$id\+\_\+co)
+\item 
+\Hypertarget{class_model_a536889c76c975875457d69d6261a15ad}\label{class_model_a536889c76c975875457d69d6261a15ad} 
+{\bfseries get\+Composantes\+For\+Commercial} (\$id\+\_\+commercial)
+\item 
+\Hypertarget{class_model_aa1d7daac55caffe65802da02e2a1d7b1}\label{class_model_aa1d7daac55caffe65802da02e2a1d7b1} 
+{\bfseries get\+Bdl\+Type\+And\+Month} (\$id\+\_\+bdl)
+\item 
+\Hypertarget{class_model_a9f5cbbabaec9ba3ba83524a0922698b6}\label{class_model_a9f5cbbabaec9ba3ba83524a0922698b6} 
+{\bfseries get\+Bdls\+Of\+Prestataire\+By\+Id\+Mission} (\$id\+\_\+mission, \$id\+\_\+prestataire)
+\item 
+\Hypertarget{class_model_abc1fb0fc2193e275a115463430e4f71e}\label{class_model_abc1fb0fc2193e275a115463430e4f71e} 
+{\bfseries get\+Id\+Activite} (\$date\+\_\+activite, \$id\+\_\+bdl)
+\item 
+\Hypertarget{class_model_ad0b63efb27115cfb10d87a0497fec4b6}\label{class_model_ad0b63efb27115cfb10d87a0497fec4b6} 
+{\bfseries dashboard\+Interlocuteur} (\$id\+\_\+in)
+\item 
+\Hypertarget{class_model_a7ad54a7429474f2604c99cc817025280}\label{class_model_a7ad54a7429474f2604c99cc817025280} 
+{\bfseries get\+Email\+Commercial\+For\+Interlocuteur} (\$id\+\_\+in)
+\item 
+\mbox{\hyperlink{class_model_afc2fcf5a2a2f2599638cf4a29817c158}{get\+Client\+Contact\+Dashboard\+Data}} ()
+\item 
+\Hypertarget{class_model_a0929b80a3e1fb989ccc8d0b75ccca25d}\label{class_model_a0929b80a3e1fb989ccc8d0b75ccca25d} 
+{\bfseries get\+Client\+For\+Commercial} ()
+\item 
+\mbox{\hyperlink{class_model_aa260b0f51dbaad74abb8f224999ba992}{get\+Component\+Commercials\+Emails}} (\$id\+Client\+Contact)
+\item 
+\mbox{\hyperlink{class_model_a4669907b4ab478c5c12c8ec9a2f40dd8}{get\+Email\+By\+Id}} (\$id)
+\item 
+\mbox{\hyperlink{class_model_af9758fd9b75b679bde92c722e5c5d715}{mail\+Exists}} (\$mail)
+\item 
+\Hypertarget{class_model_a9ce286a21fc6342b872d9f53617bb3f3}\label{class_model_a9ce286a21fc6342b872d9f53617bb3f3} 
+{\bfseries get\+Bdl\+Presta\+For\+Interlocuteur} (\$id\+\_\+pr, \$id\+\_\+in)
+\item 
+\Hypertarget{class_model_a6dac41bdb75ab6b034e226a60f1d8fb0}\label{class_model_a6dac41bdb75ab6b034e226a60f1d8fb0} 
+{\bfseries get\+Interlocuteur\+For\+Prestataire} (\$id\+\_\+pr)
+\item 
+\mbox{\hyperlink{class_model_a077378a9696d18947c07657e8a730be1}{check\+Mail\+Password}} (\$mail, \$password)
+\item 
+\mbox{\hyperlink{class_model_a4a0266c65edc52ec6fdf768c0e0065b3}{has\+Several\+Roles}} ()
+\item 
+\Hypertarget{class_model_a68356b07f519e1d64dba5993ebd5fd0d}\label{class_model_a68356b07f519e1d64dba5993ebd5fd0d} 
+{\bfseries check\+Personne\+Existe} (\$email)
+\item 
+\Hypertarget{class_model_a48fabe8faab93676e1e9f3c8a3ee84c4}\label{class_model_a48fabe8faab93676e1e9f3c8a3ee84c4} 
+{\bfseries check\+Composante\+Existe} (\$nom\+\_\+compo, \$nom\+\_\+client)
+\item 
+\Hypertarget{class_model_abc43609ab3ce9705e92aba1fce4e583f}\label{class_model_abc43609ab3ce9705e92aba1fce4e583f} 
+{\bfseries check\+Societe\+Existe} (\$nom\+\_\+client)
+\item 
+\Hypertarget{class_model_aa006de4dad67863ee302cd20818687c9}\label{class_model_aa006de4dad67863ee302cd20818687c9} 
+{\bfseries check\+Mission\+Existe} (\$nom\+\_\+mission, \$nom\+\_\+compo)
+\item 
+\Hypertarget{class_model_a4e229bbcd6ccbe3938d157754bdd6965}\label{class_model_a4e229bbcd6ccbe3938d157754bdd6965} 
+{\bfseries check\+Interlocuteur\+Existe} (\$email)
+\item 
+\Hypertarget{class_model_a9b029c76554a5241055553f95566100e}\label{class_model_a9b029c76554a5241055553f95566100e} 
+{\bfseries check\+Commercial\+Existe} (\$email)
+\item 
+\Hypertarget{class_model_ac746cdb51522751933e0ec455dac1b1a}\label{class_model_ac746cdb51522751933e0ec455dac1b1a} 
+{\bfseries check\+Prestataire\+Existe} (\$email)
+\item 
+\Hypertarget{class_model_ad7e230ad29c99238821c15197885f078}\label{class_model_ad7e230ad29c99238821c15197885f078} 
+{\bfseries check\+Gestionnaire\+Existe} (\$email)
+\item 
+\Hypertarget{class_model_a528bc0d82bccc00e03e469c86fffb204}\label{class_model_a528bc0d82bccc00e03e469c86fffb204} 
+{\bfseries check\+Activite\+Existe} (\$id\+\_\+bdl, \$date\+\_\+activite)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_model_a851c38f53f2ba648559d2e883961ffcc}{get\+Model}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_model_afd0de36421f9848770199b5cc221e3e0}\index{Model@{Model}!addBdlInMission@{addBdlInMission}}
+\index{addBdlInMission@{addBdlInMission}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{addBdlInMission()}{addBdlInMission()}}
+{\footnotesize\ttfamily \label{class_model_afd0de36421f9848770199b5cc221e3e0} 
+Model\+::add\+Bdl\+In\+Mission (\begin{DoxyParamCaption}\item[{}]{\$nom\+\_\+mission}{, }\item[{}]{\$nom\+\_\+composante}{, }\item[{}]{\$mois}{, }\item[{}]{\$id\+\_\+prestataire}{}\end{DoxyParamCaption})}
+
+Méthode permettant d\textquotesingle{}ajouter un bon de livraison dans la table BON\+\_\+\+DE\+\_\+\+LIVRAISON avec seulement les informations comme le mois, la mission et le prestataire. 
+\begin{DoxyParams}{Parameters}
+{\em \$nom\+\_\+mission} & \\
+\hline
+{\em \$nom\+\_\+composante} & \\
+\hline
+{\em \$mois} & \\
+\hline
+{\em \$id\+\_\+prestataire} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}void 
+\end{DoxyReturn}
+\Hypertarget{class_model_a44cdeff512c15198a35dec894df3831b}\index{Model@{Model}!addClient@{addClient}}
+\index{addClient@{addClient}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{addClient()}{addClient()}}
+{\footnotesize\ttfamily \label{class_model_a44cdeff512c15198a35dec894df3831b} 
+Model\+::add\+Client (\begin{DoxyParamCaption}\item[{}]{\$client}{, }\item[{}]{\$tel}{}\end{DoxyParamCaption})}
+
+Méthode permettant d\textquotesingle{}ajouter un client dans la table client avec ses informations 
+\begin{DoxyParams}{Parameters}
+{\em \$client} & \\
+\hline
+{\em \$tel} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_model_af3ed117ffa7e073bd56fb944c5412fb4}\index{Model@{Model}!addCommercial@{addCommercial}}
+\index{addCommercial@{addCommercial}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{addCommercial()}{addCommercial()}}
+{\footnotesize\ttfamily \label{class_model_af3ed117ffa7e073bd56fb944c5412fb4} 
+Model\+::add\+Commercial (\begin{DoxyParamCaption}\item[{}]{\$email}{}\end{DoxyParamCaption})}
+
+Méthode permettant d\textquotesingle{}ajouter une personne dans la table commercial en connaissant son email 
+\begin{DoxyParams}{Parameters}
+{\em \$email} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_model_affcd40b767214b9ba1f46aca08604bb1}\index{Model@{Model}!addComposante@{addComposante}}
+\index{addComposante@{addComposante}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{addComposante()}{addComposante()}}
+{\footnotesize\ttfamily \label{class_model_affcd40b767214b9ba1f46aca08604bb1} 
+Model\+::add\+Composante (\begin{DoxyParamCaption}\item[{}]{\$libelle\+Voie}{, }\item[{}]{\$id\+\_\+type\+\_\+voie}{, }\item[{}]{\$cp}{, }\item[{}]{\$num\+Voie}{, }\item[{}]{\$nom\+Voie}{, }\item[{}]{\$nom\+\_\+client}{, }\item[{}]{\$nom\+\_\+compo}{}\end{DoxyParamCaption})}
+
+Méthode permettant d\textquotesingle{}ajouter une composante en ajoutant les informations de son adresse dans la table adresse puis les informations de la composante dans la table composante 
+\begin{DoxyParams}{Parameters}
+{\em \$libelle\+Voie} & \\
+\hline
+{\em \$cp} & \\
+\hline
+{\em \$num\+Voie} & \\
+\hline
+{\em \$nom\+Voie} & \\
+\hline
+{\em \$nom\+\_\+client} & \\
+\hline
+{\em \$nom\+\_\+compo} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_model_a91453c35c34167bbe7cb6339683fcccb}\index{Model@{Model}!addDemiJournee@{addDemiJournee}}
+\index{addDemiJournee@{addDemiJournee}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{addDemiJournee()}{addDemiJournee()}}
+{\footnotesize\ttfamily \label{class_model_a91453c35c34167bbe7cb6339683fcccb} 
+Model\+::add\+Demi\+Journee (\begin{DoxyParamCaption}\item[{}]{\$commentaire}{, }\item[{}]{\$id\+\_\+bdl}{, }\item[{}]{\$id\+\_\+personne}{, }\item[{}]{\$date\+\_\+bdl}{, }\item[{}]{\$nb\+\_\+dj}{}\end{DoxyParamCaption})}
+
+Méthode permettant d\textquotesingle{}ajouter une activité en fonction de si il s\textquotesingle{}agit d\textquotesingle{}un bon de livraison de type Demi-\/\+Journée 
+\begin{DoxyParams}{Parameters}
+{\em \$commentaire} & \\
+\hline
+{\em \$id\+\_\+bdl} & \\
+\hline
+{\em \$id\+\_\+personne} & \\
+\hline
+{\em \$date\+\_\+bdl} & \\
+\hline
+{\em \$nb\+\_\+dj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_model_a4c73e6ecb92786edae8d47a9bd1bfaa2}\index{Model@{Model}!addGestionnaire@{addGestionnaire}}
+\index{addGestionnaire@{addGestionnaire}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{addGestionnaire()}{addGestionnaire()}}
+{\footnotesize\ttfamily \label{class_model_a4c73e6ecb92786edae8d47a9bd1bfaa2} 
+Model\+::add\+Gestionnaire (\begin{DoxyParamCaption}\item[{}]{\$email}{}\end{DoxyParamCaption})}
+
+Méthode permettant d\textquotesingle{}ajouter une personne dans la table gestionnaire en connaissant son email 
+\begin{DoxyParams}{Parameters}
+{\em \$email} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_model_a12f01889fe44579e53f9b097b41e63dc}\index{Model@{Model}!addInterlocuteur@{addInterlocuteur}}
+\index{addInterlocuteur@{addInterlocuteur}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{addInterlocuteur()}{addInterlocuteur()}}
+{\footnotesize\ttfamily \label{class_model_a12f01889fe44579e53f9b097b41e63dc} 
+Model\+::add\+Interlocuteur (\begin{DoxyParamCaption}\item[{}]{\$email}{}\end{DoxyParamCaption})}
+
+Méthode permettant d\textquotesingle{}ajouter une personne dans la table interlocuteur en connaissant son email 
+\begin{DoxyParams}{Parameters}
+{\em \$email} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_model_af0311e2810c434012d11e55a71cb8e9a}\index{Model@{Model}!addJourneeJour@{addJourneeJour}}
+\index{addJourneeJour@{addJourneeJour}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{addJourneeJour()}{addJourneeJour()}}
+{\footnotesize\ttfamily \label{class_model_af0311e2810c434012d11e55a71cb8e9a} 
+Model\+::add\+Journee\+Jour (\begin{DoxyParamCaption}\item[{}]{\$commentaire}{, }\item[{}]{\$id\+\_\+bdl}{, }\item[{}]{\$id\+\_\+personne}{, }\item[{}]{\$date\+\_\+bdl}{, }\item[{}]{\$nb\+\_\+jour}{}\end{DoxyParamCaption})}
+
+Méthode permettant d\textquotesingle{}ajouter une activité en fonction de si il s\textquotesingle{}agit d\textquotesingle{}un bon de livraison de type Journée 
+\begin{DoxyParams}{Parameters}
+{\em \$commentaire} & \\
+\hline
+{\em \$id\+\_\+bdl} & \\
+\hline
+{\em \$id\+\_\+personne} & \\
+\hline
+{\em \$date\+\_\+bdl} & \\
+\hline
+{\em \$nb\+\_\+jour} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_model_a2050f891fcf5bfdf176ca691c1b02535}\index{Model@{Model}!addMission@{addMission}}
+\index{addMission@{addMission}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{addMission()}{addMission()}}
+{\footnotesize\ttfamily \label{class_model_a2050f891fcf5bfdf176ca691c1b02535} 
+Model\+::add\+Mission (\begin{DoxyParamCaption}\item[{}]{\$type}{, }\item[{}]{\$nom}{, }\item[{}]{\$date}{, }\item[{}]{\$nom\+\_\+client}{, }\item[{}]{\$id\+\_\+composante}{}\end{DoxyParamCaption})}
+
+Méthode permettant d\textquotesingle{}ajouter une mission avec ses informations et les identifiants de la composante et de la société auxquelles elle est liée 
+\begin{DoxyParams}{Parameters}
+{\em \$type} & \\
+\hline
+{\em \$nom} & \\
+\hline
+{\em \$date} & \\
+\hline
+{\em \$nom\+\_\+compo} & \\
+\hline
+{\em \$nom\+\_\+client} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_model_a862ce430ebdddb3975fe397845e461c8}\index{Model@{Model}!addNbHeureActivite@{addNbHeureActivite}}
+\index{addNbHeureActivite@{addNbHeureActivite}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{addNbHeureActivite()}{addNbHeureActivite()}}
+{\footnotesize\ttfamily \label{class_model_a862ce430ebdddb3975fe397845e461c8} 
+Model\+::add\+Nb\+Heure\+Activite (\begin{DoxyParamCaption}\item[{}]{\$commentaire}{, }\item[{}]{\$id\+\_\+bdl}{, }\item[{}]{\$id\+\_\+personne}{, }\item[{}]{\$date\+\_\+bdl}{, }\item[{}]{\$nb\+\_\+heure}{}\end{DoxyParamCaption})}
+
+Méthode permettant d\textquotesingle{}ajouter une activité en fonction de si il s\textquotesingle{}agit d\textquotesingle{}un bon de livraison de type Heure 
+\begin{DoxyParams}{Parameters}
+{\em \$commentaire} & \\
+\hline
+{\em \$id\+\_\+bdl} & \\
+\hline
+{\em \$id\+\_\+personne} & \\
+\hline
+{\em \$date\+\_\+bdl} & \\
+\hline
+{\em \$nb\+\_\+heure} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_model_aba1750d96b16a962614631863850c9a2}\index{Model@{Model}!addPrestataire@{addPrestataire}}
+\index{addPrestataire@{addPrestataire}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{addPrestataire()}{addPrestataire()}}
+{\footnotesize\ttfamily \label{class_model_aba1750d96b16a962614631863850c9a2} 
+Model\+::add\+Prestataire (\begin{DoxyParamCaption}\item[{}]{\$email}{}\end{DoxyParamCaption})}
+
+Méthode permettant d\textquotesingle{}ajouter une personne dans la table prestataire en connaissant son email 
+\begin{DoxyParams}{Parameters}
+{\em \$email} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_model_a26443a0cd14eb4d53e91fca8ec1a3906}\index{Model@{Model}!assignerCommercial@{assignerCommercial}}
+\index{assignerCommercial@{assignerCommercial}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{assignerCommercial()}{assignerCommercial()}}
+{\footnotesize\ttfamily \label{class_model_a26443a0cd14eb4d53e91fca8ec1a3906} 
+Model\+::assigner\+Commercial (\begin{DoxyParamCaption}\item[{}]{\$email}{, }\item[{}]{\$composante}{, }\item[{}]{\$client}{}\end{DoxyParamCaption})}
+
+Méthode permettant 
+\begin{DoxyParams}{Parameters}
+{\em \$email} & \\
+\hline
+{\em \$composante} & \\
+\hline
+{\em \$client} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_model_ab19d4f01841cc9e117560789ac16dd2c}\index{Model@{Model}!assignerInterlocuteurComposante@{assignerInterlocuteurComposante}}
+\index{assignerInterlocuteurComposante@{assignerInterlocuteurComposante}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{assignerInterlocuteurComposante()}{assignerInterlocuteurComposante()}}
+{\footnotesize\ttfamily \label{class_model_ab19d4f01841cc9e117560789ac16dd2c} 
+Model\+::assigner\+Interlocuteur\+Composante (\begin{DoxyParamCaption}\item[{}]{\$composante}{, }\item[{}]{\$client}{, }\item[{}]{\$email}{}\end{DoxyParamCaption})}
+
+Méthode permettant d\textquotesingle{}assigner un interlocuteur à une composante en connaissant le nom de la composante et de la société 
+\begin{DoxyParams}{Parameters}
+{\em \$composante} & \\
+\hline
+{\em \$client} & \\
+\hline
+{\em \$email} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_model_a402be1934aade19a462195aecc34b8e4}\index{Model@{Model}!assignerInterlocuteurComposanteByIdClient@{assignerInterlocuteurComposanteByIdClient}}
+\index{assignerInterlocuteurComposanteByIdClient@{assignerInterlocuteurComposanteByIdClient}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{assignerInterlocuteurComposanteByIdClient()}{assignerInterlocuteurComposanteByIdClient()}}
+{\footnotesize\ttfamily \label{class_model_a402be1934aade19a462195aecc34b8e4} 
+Model\+::assigner\+Interlocuteur\+Composante\+By\+Id\+Client (\begin{DoxyParamCaption}\item[{}]{\$id\+\_\+personne}{, }\item[{}]{\$composante}{}\end{DoxyParamCaption})}
+
+Méthode permettant d\textquotesingle{}assigner un interlocuteur à une composante en connaissant le nom de la composante et l\textquotesingle{}identifiant de la société 
+\begin{DoxyParams}{Parameters}
+{\em \$id\+\_\+client} & \\
+\hline
+{\em \$email} & \\
+\hline
+{\em \$composante} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_model_ad091b01e2de037058912eb6a1aadba02}\index{Model@{Model}!assignerInterlocuteurComposanteByIdComposante@{assignerInterlocuteurComposanteByIdComposante}}
+\index{assignerInterlocuteurComposanteByIdComposante@{assignerInterlocuteurComposanteByIdComposante}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{assignerInterlocuteurComposanteByIdComposante()}{assignerInterlocuteurComposanteByIdComposante()}}
+{\footnotesize\ttfamily \label{class_model_ad091b01e2de037058912eb6a1aadba02} 
+Model\+::assigner\+Interlocuteur\+Composante\+By\+Id\+Composante (\begin{DoxyParamCaption}\item[{}]{\$id\+\_\+composante}{, }\item[{}]{\$id\+\_\+personne}{}\end{DoxyParamCaption})}
+
+Méthode permettant d\textquotesingle{}assigner un interlocuteur à une composante en connaissant l\textquotesingle{}identifiant de la composante 
+\begin{DoxyParams}{Parameters}
+{\em \$id\+\_\+composante} & \\
+\hline
+{\em \$email} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_model_a636d8e502d7b25f53012145ea2644603}\index{Model@{Model}!assignerPrestataire@{assignerPrestataire}}
+\index{assignerPrestataire@{assignerPrestataire}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{assignerPrestataire()}{assignerPrestataire()}}
+{\footnotesize\ttfamily \label{class_model_a636d8e502d7b25f53012145ea2644603} 
+Model\+::assigner\+Prestataire (\begin{DoxyParamCaption}\item[{}]{\$email}{, }\item[{}]{\$mission}{, }\item[{}]{\$id\+\_\+composante}{}\end{DoxyParamCaption})}
+
+Méthode permettant d\textquotesingle{}assigner un prestataire à une mission et lui créée un bon de livraison 
+\begin{DoxyParams}{Parameters}
+{\em \$email} & \\
+\hline
+{\em \$mission} & \\
+\hline
+{\em \$id\+\_\+composante} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_model_a077378a9696d18947c07657e8a730be1}\index{Model@{Model}!checkMailPassword@{checkMailPassword}}
+\index{checkMailPassword@{checkMailPassword}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{checkMailPassword()}{checkMailPassword()}}
+{\footnotesize\ttfamily \label{class_model_a077378a9696d18947c07657e8a730be1} 
+Model\+::check\+Mail\+Password (\begin{DoxyParamCaption}\item[{}]{\$mail}{, }\item[{}]{\$password}{}\end{DoxyParamCaption})}
+
+Vérifie que le mot de passe correspond bien au mail. Si ils correspondent, une session avec les informations de la personne lié au mail débute. \Hypertarget{class_model_a3ec2a0cd5bfa46a68490cb193eed99d9}\index{Model@{Model}!createPersonne@{createPersonne}}
+\index{createPersonne@{createPersonne}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{createPersonne()}{createPersonne()}}
+{\footnotesize\ttfamily \label{class_model_a3ec2a0cd5bfa46a68490cb193eed99d9} 
+Model\+::create\+Personne (\begin{DoxyParamCaption}\item[{}]{\$nom}{, }\item[{}]{\$prenom}{, }\item[{}]{\$email}{, }\item[{}]{\$mdp}{}\end{DoxyParamCaption})}
+
+Méthode permettant d\textquotesingle{}insérer une ligne dans la table personne 
+\begin{DoxyParams}{Parameters}
+{\em \$nom} & \\
+\hline
+{\em \$prenom} & \\
+\hline
+{\em \$email} & \\
+\hline
+{\em \$mdp} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_model_a2e0340baf70e4d62ec6caf2257524fcf}\index{Model@{Model}!getAllClients@{getAllClients}}
+\index{getAllClients@{getAllClients}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getAllClients()}{getAllClients()}}
+{\footnotesize\ttfamily \label{class_model_a2e0340baf70e4d62ec6caf2257524fcf} 
+Model\+::get\+All\+Clients (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Méthode permettant de récupérer la liste de toutes les sociétés \begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{class_model_a13ed4a2f759e50232d833e828cb552d2}\index{Model@{Model}!getAllCommerciaux@{getAllCommerciaux}}
+\index{getAllCommerciaux@{getAllCommerciaux}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getAllCommerciaux()}{getAllCommerciaux()}}
+{\footnotesize\ttfamily \label{class_model_a13ed4a2f759e50232d833e828cb552d2} 
+Model\+::get\+All\+Commerciaux (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Méthode permettant de récupérer la liste de tous les commerciaux \begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{class_model_a2ed37314dc6e163400030e8f6cf9767d}\index{Model@{Model}!getAllComposantes@{getAllComposantes}}
+\index{getAllComposantes@{getAllComposantes}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getAllComposantes()}{getAllComposantes()}}
+{\footnotesize\ttfamily \label{class_model_a2ed37314dc6e163400030e8f6cf9767d} 
+Model\+::get\+All\+Composantes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Méthode permettant de récupérer la liste des composantes \begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{class_model_a0059f66bd4640daa435e230a142d49c0}\index{Model@{Model}!getAllGestionnaires@{getAllGestionnaires}}
+\index{getAllGestionnaires@{getAllGestionnaires}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getAllGestionnaires()}{getAllGestionnaires()}}
+{\footnotesize\ttfamily \label{class_model_a0059f66bd4640daa435e230a142d49c0} 
+Model\+::get\+All\+Gestionnaires (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Méthode permettant de récupérer la liste de tous les gestionnaires \begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{class_model_a7f313499fb87bcac19a72fadb4cb4623}\index{Model@{Model}!getAllPrestataires@{getAllPrestataires}}
+\index{getAllPrestataires@{getAllPrestataires}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getAllPrestataires()}{getAllPrestataires()}}
+{\footnotesize\ttfamily \label{class_model_a7f313499fb87bcac19a72fadb4cb4623} 
+Model\+::get\+All\+Prestataires (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Méthode permettant de récupérer la liste de tous les prestataires \begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{class_model_a126a839a45f31c4129d1f6d5e369ec8a}\index{Model@{Model}!getBdlComposante@{getBdlComposante}}
+\index{getBdlComposante@{getBdlComposante}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getBdlComposante()}{getBdlComposante()}}
+{\footnotesize\ttfamily \label{class_model_a126a839a45f31c4129d1f6d5e369ec8a} 
+Model\+::get\+Bdl\+Composante (\begin{DoxyParamCaption}\item[{}]{\$id\+\_\+composante}{}\end{DoxyParamCaption})}
+
+Méthode permettant de récupérer la liste des bons de livraison liés d\textquotesingle{}une composante 
+\begin{DoxyParams}{Parameters}
+{\em \$id\+\_\+composante} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{class_model_afc2fcf5a2a2f2599638cf4a29817c158}\index{Model@{Model}!getClientContactDashboardData@{getClientContactDashboardData}}
+\index{getClientContactDashboardData@{getClientContactDashboardData}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getClientContactDashboardData()}{getClientContactDashboardData()}}
+{\footnotesize\ttfamily \label{class_model_afc2fcf5a2a2f2599638cf4a29817c158} 
+Model\+::get\+Client\+Contact\+Dashboard\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Récupère les informations de l\textquotesingle{}interlocuteur client par rapport à sa mission \begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{class_model_aa42a494bc03206d39e6fc59a7560df57}\index{Model@{Model}!getCommerciauxComposante@{getCommerciauxComposante}}
+\index{getCommerciauxComposante@{getCommerciauxComposante}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getCommerciauxComposante()}{getCommerciauxComposante()}}
+{\footnotesize\ttfamily \label{class_model_aa42a494bc03206d39e6fc59a7560df57} 
+Model\+::get\+Commerciaux\+Composante (\begin{DoxyParamCaption}\item[{}]{\$id}{}\end{DoxyParamCaption})}
+
+Méthode permettant de récupérer la liste des commerciaux d\textquotesingle{}une composante 
+\begin{DoxyParams}{Parameters}
+{\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{class_model_aa260b0f51dbaad74abb8f224999ba992}\index{Model@{Model}!getComponentCommercialsEmails@{getComponentCommercialsEmails}}
+\index{getComponentCommercialsEmails@{getComponentCommercialsEmails}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getComponentCommercialsEmails()}{getComponentCommercialsEmails()}}
+{\footnotesize\ttfamily \label{class_model_aa260b0f51dbaad74abb8f224999ba992} 
+Model\+::get\+Component\+Commercials\+Emails (\begin{DoxyParamCaption}\item[{}]{\$id\+Client\+Contact}{}\end{DoxyParamCaption})}
+
+Renvoie la liste des emails des commerciaux assignées à la mission de l\textquotesingle{}interlocuteur client 
+\begin{DoxyParams}{Parameters}
+{\em \$id\+Client\+Contact} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_model_a1c13c67981cba862362e461db6a76fea}\index{Model@{Model}!getComposantesSociete@{getComposantesSociete}}
+\index{getComposantesSociete@{getComposantesSociete}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getComposantesSociete()}{getComposantesSociete()}}
+{\footnotesize\ttfamily \label{class_model_a1c13c67981cba862362e461db6a76fea} 
+Model\+::get\+Composantes\+Societe (\begin{DoxyParamCaption}\item[{}]{\$id}{}\end{DoxyParamCaption})}
+
+Méthode permettant de récupérer la liste des composantes d\textquotesingle{}une société 
+\begin{DoxyParams}{Parameters}
+{\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{class_model_aec7efa8b01055730d2b0b58b4a29569d}\index{Model@{Model}!getDashboardGestionnaire@{getDashboardGestionnaire}}
+\index{getDashboardGestionnaire@{getDashboardGestionnaire}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getDashboardGestionnaire()}{getDashboardGestionnaire()}}
+{\footnotesize\ttfamily \label{class_model_aec7efa8b01055730d2b0b58b4a29569d} 
+Model\+::get\+Dashboard\+Gestionnaire (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Méthode permettant de récupérer toutes les informations des missions en fonction de la composante, la société et les prestataires assignés \begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{class_model_a4669907b4ab478c5c12c8ec9a2f40dd8}\index{Model@{Model}!getEmailById@{getEmailById}}
+\index{getEmailById@{getEmailById}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getEmailById()}{getEmailById()}}
+{\footnotesize\ttfamily \label{class_model_a4669907b4ab478c5c12c8ec9a2f40dd8} 
+Model\+::get\+Email\+By\+Id (\begin{DoxyParamCaption}\item[{}]{\$id}{}\end{DoxyParamCaption})}
+
+Récupère le mail dans la base de données grâce à l\textquotesingle{}identifiant de la personne 
+\begin{DoxyParams}{Parameters}
+{\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_model_a48709b42e377523b696a5cc05d415b05}\index{Model@{Model}!getIdComposante@{getIdComposante}}
+\index{getIdComposante@{getIdComposante}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getIdComposante()}{getIdComposante()}}
+{\footnotesize\ttfamily \label{class_model_a48709b42e377523b696a5cc05d415b05} 
+Model\+::get\+Id\+Composante (\begin{DoxyParamCaption}\item[{}]{\$composante}{}\end{DoxyParamCaption})}
+
+Méthode permettant de récupérer l\textquotesingle{}id d\textquotesingle{}un composant à l\textquotesingle{}aide de son nom et la société à laquelle il appartient 
+\begin{DoxyParams}{Parameters}
+{\em \$composante} & \\
+\hline
+{\em \$client} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_model_a11374e7e5ac7890a2d3a17652a678813}\index{Model@{Model}!getInfosComposante@{getInfosComposante}}
+\index{getInfosComposante@{getInfosComposante}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getInfosComposante()}{getInfosComposante()}}
+{\footnotesize\ttfamily \label{class_model_a11374e7e5ac7890a2d3a17652a678813} 
+Model\+::get\+Infos\+Composante (\begin{DoxyParamCaption}\item[{}]{\$id}{}\end{DoxyParamCaption})}
+
+Méthode permettant de récupérer les informations d\textquotesingle{}une composante 
+\begin{DoxyParams}{Parameters}
+{\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_model_a1da1a231c36c6becef2b332a21bf8e1b}\index{Model@{Model}!getInfosPersonne@{getInfosPersonne}}
+\index{getInfosPersonne@{getInfosPersonne}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getInfosPersonne()}{getInfosPersonne()}}
+{\footnotesize\ttfamily \label{class_model_a1da1a231c36c6becef2b332a21bf8e1b} 
+Model\+::get\+Infos\+Personne (\begin{DoxyParamCaption}\item[{}]{\$id}{}\end{DoxyParamCaption})}
+
+Méthode permettant de récupérer le nom, prenom et email d\textquotesingle{}une personne en fonction de son identifiant 
+\begin{DoxyParams}{Parameters}
+{\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_model_aecc0177eec676cf35793179a9f66cef4}\index{Model@{Model}!getInfosSociete@{getInfosSociete}}
+\index{getInfosSociete@{getInfosSociete}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getInfosSociete()}{getInfosSociete()}}
+{\footnotesize\ttfamily \label{class_model_aecc0177eec676cf35793179a9f66cef4} 
+Model\+::get\+Infos\+Societe (\begin{DoxyParamCaption}\item[{}]{\$id}{}\end{DoxyParamCaption})}
+
+Méthode permettant de récupérer les informations d\textquotesingle{}une société 
+\begin{DoxyParams}{Parameters}
+{\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_model_a0b5a4ab01a3fcbd64ad2a1f0f8e391c8}\index{Model@{Model}!getInterlocuteursComposante@{getInterlocuteursComposante}}
+\index{getInterlocuteursComposante@{getInterlocuteursComposante}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getInterlocuteursComposante()}{getInterlocuteursComposante()}}
+{\footnotesize\ttfamily \label{class_model_a0b5a4ab01a3fcbd64ad2a1f0f8e391c8} 
+Model\+::get\+Interlocuteurs\+Composante (\begin{DoxyParamCaption}\item[{}]{\$id}{}\end{DoxyParamCaption})}
+
+Méthode permettant de récupérer la liste des interlocuteurs d\textquotesingle{}une composante 
+\begin{DoxyParams}{Parameters}
+{\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{class_model_a02d45d041f88445b9855550e073060cf}\index{Model@{Model}!getInterlocuteursSociete@{getInterlocuteursSociete}}
+\index{getInterlocuteursSociete@{getInterlocuteursSociete}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getInterlocuteursSociete()}{getInterlocuteursSociete()}}
+{\footnotesize\ttfamily \label{class_model_a02d45d041f88445b9855550e073060cf} 
+Model\+::get\+Interlocuteurs\+Societe (\begin{DoxyParamCaption}\item[{}]{\$id}{}\end{DoxyParamCaption})}
+
+Méthode peremettant de récupérer la liste des interlocuteurs d\textquotesingle{}une société 
+\begin{DoxyParams}{Parameters}
+{\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{class_model_a851c38f53f2ba648559d2e883961ffcc}\index{Model@{Model}!getModel@{getModel}}
+\index{getModel@{getModel}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getModel()}{getModel()}}
+{\footnotesize\ttfamily \label{class_model_a851c38f53f2ba648559d2e883961ffcc} 
+static Model\+::get\+Model (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Méthode permettant de récupérer un modèle car le constructeur est privé (Implémentation du Design Pattern Singleton) \Hypertarget{class_model_aebfb147067b24b6ed229b94c28b95888}\index{Model@{Model}!getPrestatairesComposante@{getPrestatairesComposante}}
+\index{getPrestatairesComposante@{getPrestatairesComposante}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getPrestatairesComposante()}{getPrestatairesComposante()}}
+{\footnotesize\ttfamily \label{class_model_aebfb147067b24b6ed229b94c28b95888} 
+Model\+::get\+Prestataires\+Composante (\begin{DoxyParamCaption}\item[{}]{\$id}{}\end{DoxyParamCaption})}
+
+Méthode permettant de récupérer la liste des prestataires d\textquotesingle{}une composante 
+\begin{DoxyParams}{Parameters}
+{\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{class_model_a4a0266c65edc52ec6fdf768c0e0065b3}\index{Model@{Model}!hasSeveralRoles@{hasSeveralRoles}}
+\index{hasSeveralRoles@{hasSeveralRoles}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{hasSeveralRoles()}{hasSeveralRoles()}}
+{\footnotesize\ttfamily \label{class_model_a4a0266c65edc52ec6fdf768c0e0065b3} 
+Model\+::has\+Several\+Roles (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Méthode vérifiant les rôles de la personne. Si il n\textquotesingle{}y a qu\textquotesingle{}un seul rôle elle retourne simplement le nom de ce rôle. Si il y a plusieurs rôles, une liste des rôles sous forme de tableau. \Hypertarget{class_model_af9758fd9b75b679bde92c722e5c5d715}\index{Model@{Model}!mailExists@{mailExists}}
+\index{mailExists@{mailExists}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{mailExists()}{mailExists()}}
+{\footnotesize\ttfamily \label{class_model_af9758fd9b75b679bde92c722e5c5d715} 
+Model\+::mail\+Exists (\begin{DoxyParamCaption}\item[{}]{\$mail}{}\end{DoxyParamCaption})}
+
+Méthode permettant de vérifier que le mail saisi existe bien. 
+\begin{DoxyParams}{Parameters}
+{\em \$mail} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Model.\+php\end{DoxyCompactItemize}

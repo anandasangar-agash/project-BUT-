@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation PHP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .class {
+            margin-bottom: 20px;
+        }
+        .method {
+            margin-left: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Documentation PHP</h1>
+
+    <!-- Controller.php -->
+    <div class="class">
+        <h2>Controller</h2>
+        <p>Ceci est la classe de contrôleur de base que les autres contrôleurs étendent. Elle inclut des fonctionnalités communes requises par tous les contrôleurs.</p>
+        <div class="method">
+            <h3>__construct</h3>
+            <pre>public function __construct()</pre>
+            <p>Initialise le contrôleur.</p>
+        </div>
+        <div class="method">
+            <h3>index</h3>
+            <pre>public function index()</pre>
+            <p>La fonction par défaut appelée lorsqu'aucune fonction spécifique n'est demandée.</p>
+        </div>
+        <div class="method">
+            <h3>loadModel</h3>
+            <pre>public function loadModel($modelName)</pre>
+            <p>Charge le modèle spécifié.</p>
+            <ul>
+                <li><strong>Paramètres :</strong> <code>string $modelName</code> - Le nom du modèle à charger.</li>
+                <li><strong>Retour :</strong> <code>object</code> - Le modèle chargé.</li>
+            </ul>
+        </div>
+        <div class="method">
+            <h3>renderView</h3>
+            <pre>public function renderView($viewName, $data = [])</pre>
+            <p>Affiche la vue spécifiée avec les données fournies.</p>
+            <ul>
+                <li><strong>Paramètres :</strong> 
+                    <ul>
+                        <li><code>string $viewName</code> - Le nom de la vue à afficher.</li>
+                        <li><code>array $data</code> - Les données à passer à la vue.</li>
+                    </ul>
+                </li>
+                <li><strong>Retour :</strong> <code>void</code></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Controller_interlocuteur.php -->
+    <div class="class">
+        <h2>Controller_interlocuteur</h2>
+        <p>Contrôleur pour la gestion des interlocuteurs.</p>
+        <div class="method">
+            <h3>__construct</h3>
+            <pre>public function __construct()</pre>
+            <p>Initialise le Controller_interlocuteur.</p>
+        </div>
+        <div class="method">
+            <h3>listInterlocutors</h3>
+            <pre>public function listInterlocutors()</pre>
+            <p>Liste tous les interlocuteurs.</p>
+        </div>
+        <div class="method">
+            <h3>addInterlocutor</h3>
+            <pre>public function addInterlocutor($interlocutorData)</pre>
+            <p>Ajoute un nouvel interlocuteur.</p>
+            <ul>
+                <li><strong>Paramètres :</strong> <code>array $interlocutorData</code> - Les données de l'interlocuteur à ajouter.</li>
+                <li><strong>Retour :</strong> <code>void</code></li>
+            </ul>
+        </div>
+        <div class="method">
+            <h3>deleteInterlocutor</h3>
+            <pre>public function deleteInterlocutor($interlocutorId)</pre>
+            <p>Supprime un interlocuteur.</p>
+            <ul>
+                <li><strong>Paramètres :</strong> <code>int $interlocutorId</code> - L'ID de l'interlocuteur à supprimer.</li>
+                <li><strong>Retour :</strong> <code>void</code></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Controller_gestionnaire.php -->
+    <div class="class">
+        <h2>Controller_gestionnaire</h2>
+        <p>Contrôleur pour la gestion des gestionnaires.</p>
+        <div class="method">
+            <h3>__construct</h3>
+            <pre>public function __construct()</pre>
+            <p>Initialise le Controller_gestionnaire.</p>
+        </div>
+        <div class="method">
+            <h3>listManagers</h3>
+            <pre>public function listManagers()</pre>
+            <p>Liste tous les gestionnaires.</p>
+        </div>
+        <div class="method">
+            <h3>addManager</h3>
+            <pre>public function addManager($managerData)</pre>
+            <p>Ajoute un nouveau gestionnaire.</p>
+            <ul>
+                <li><strong>Paramètres :</strong> <code>array $managerData</code> - Les données du gestionnaire à ajouter.</li>
+                <li><strong>Retour :</strong> <code>void</code></li>
+            </ul>
+        </div>
+        <div class="method">
+            <h3>deleteManager</h3>
+            <pre>public function deleteManager($managerId)</pre>
+            <p>Supprime un gestionnaire.</p>
+            <ul>
+                <li><strong>Paramètres :</strong> <code>int $managerId</code> - L'ID du gestionnaire à supprimer.</li>
+                <li><strong>Retour :</strong> <code>void</code></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Controller_login.php -->
+    <div class="class">
+        <h2>Controller_login</h2>
+        <p>Contrôleur pour la gestion de la connexion des utilisateurs.</p>
+        <div class="method">
+            <h3>__construct</h3>
+            <pre>public function __construct()</pre>
+            <p>Initialise le Controller_login.</p>
+        </div>
+        <div class="method">
+            <h3>loginUser</h3>
+            <pre>public function loginUser($username, $password)</pre>
+            <p>Authentifie un utilisateur et démarre une session.</p>
+            <ul>
+                <li><strong>Paramètres :</strong> 
+                    <ul>
+                        <li><code>string $username</code> - Le nom d'utilisateur de l'utilisateur.</li>
+                        <li><code>string $password</code> - Le mot de passe de l'utilisateur.</li>
+                    </ul>
+                </li>
+                <li><strong>Retour :</strong> <code>void</code></li>
+            </ul>
+        </div>
+        <div class="method">
+            <h3>logoutUser</h3>
+            <pre>public function logoutUser()</pre>
+            <p>Déconnecte l'utilisateur actuel et termine la session.</p>
+        </div>
+    </div>
+
+    <!-- Controller_prestataire.php -->
+    <div class="class">
+        <h2>Controller_prestataire</h2>
+        <p>Contrôleur pour la gestion des prestataires de services.</p>
+        <div class="method">
+            <h3>__construct</h3>
+            <pre>public function __construct()</pre>
+            <p>Initialise le Controller_prestataire.</p>
+        </div>
+        <div class="method">
+            <h3>listProviders</h3>
+            <pre>public function listProviders()</pre>
+            <p>Liste tous les prestataires de services.</p>
+        </div>
+        <div class="method">
+            <h3>addProvider</h3>
+            <pre>public function addProvider($providerData)</pre>
+            <p>Ajoute un nouveau prestataire de services.</p>
+            <ul>
+                <li><strong>Paramètres :</strong> <code>array $providerData</code> - Les données du prestataire à ajouter.</li>
+                <li><strong>Retour :</strong> <code>void</code></li>
+            </ul>
+        </div>
+        <div class="method">
+            <h3>deleteProvider</h3>
+            <pre>public function deleteProvider($providerId)</pre>
+            <p>Supprime un prestataire de services.</p>
+            <ul>
+                <li><strong>Paramètres :</strong> <code>int $providerId</code> - L'ID du prestataire à supprimer.</li>
+                <li><strong>Retour :</strong> <code>void</code></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Controller_commercial.php -->
+    <div class="class">
+        <h2>Controller_commercial</
+

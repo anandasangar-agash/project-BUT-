@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code revivors Doc</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: lightblue;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: white;
+        }
+        h1, h2, h3, h4 {
+            color: #007BFF;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        p {
+            margin: 0.5rem 0;
+        }
+        code {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 90%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Documentation du site web Code_Revivors</h1>
+    </header>
+    <div class="container">
+        <h2>Structure MVC</h2>
+        <section>
+            <h3>Functions pour tous</h3>
+            <p>Changer le mdp</p>
+            <p><code>action_password()</code>: affiche formulaire de changement de mot de passe <code>view_reset_password</code>.</p>
+        </section>
+        <section>
+            <h3>Controllers</h3>
+            <h4>Controller</h4>
+            <p><code>__construct()</code>: vérifie si une action est demandée dans l’url et appelle l’action, sinon elle appelle l’action par défaut</p>
+            <p><code>action_default()</code>: affiche la page de connexion par défaut</p>
+            <p><code>action_error($message)</code>: affiche la vue d’erreur avec le message</p>
+            <p><code>render($view, $data)</code>: affiche la vue avec des données associées(facultatif). Fonction qui sera appelée par les actions</p>
+            
+            <h4>Controller_login</h4>
+            <p><code>action_default()</code>: appelle la fonction <code>action_login_form()</code>.</p>
+            <p><code>action_login_form()</code>: affiche la vue du formulaire de connexion.</p>
+            <p><code>action_check_login()</code>: vérifie qu’il existe un mail dans <code>$_POST</code> et le chiffre, vérifie qu’il correspond à un mail qui est dans la bdd. Renvoie true ou false.</p>
+            <p><code>action_change_pswd()</code>: vérifie qu’il existe un mail dans l’url et vérifie qu’il est dans la bdd pour ensuite envoyer un mail pour changer de mot de passe.</p>
+            <p><code>action_check_pswd()</code>: vérifie qu’il existe un mail et un mdp dans <code>$_POST</code>, les chiffre avec la fonction <code>action_ersa($password)</code> et vérifie qu’il s’agit du mot de passe de la personne qui a l’identifiant. Si c’est bon, il vérifie si l’utilisateur a plusieurs rôles. Si oui, il récupère la liste des rôles et la renvoie au front(à voir comment faire pour qu’il y ai une popup).</p>
+            <p><code>action_remind_login()</code>: vérifie si dans le tableau POST il existe un numéro et vérifie s’il existe dans la bdd puis envoie un sms à ce numéro pour rappeler le mail.</p>
+            <p><code>action_ersa($password)</code>: chiffrement avec RSA</p>
+
+            <h4>Controllers_client_contact</h4>
+            <p><code>action_default()</code>: appelle la fonction <code>action_dashboard()</code>.</p>
+            <p><code>action_dashboard()</code>: récupère un tableau avec les textes de la page et affiche la vue <code>view_client_contact_dashboard</code>.</p>
+            <p><code>action_bdl()</code>: récupère l’id du bdl dans <code>$_GET</code> et renvoie la vue <code>view_bdl</code> pour éditer le pdf.</p>
+            <p><code>action_download_bdl()</code>: réfléchir à comment faire (voir FPDF)</p>
+            <p><code>action_download_bdl($id_pdf)</code>: permet de télécharger le pdf. Vérifie s'il existe un fichier associé à l’id et change le chemin de la balise <code>&lt;a&gt;</code> si id existe.</p>
+            <p><code>action_send_mail()</code>: récupère le mail du commercial de la mission et envoie le mail.</p>
+
+            <h4>Controllers_supplier</h4>
+            <p><code>action_default()</code>: appelle la fonction <code>action_dashboard()</code>.</p>
+            <p><code>action_dashboard()</code>: récupère les 5 premières lignes du tableau associé avec les textes de la page et affiche la vue <code>view_supplier_dashboard</code>.</p>
+            <p><code>action_bdl($id_bdl)</code>: récupère un tableau avec les textes de la page concernant les bons de livraisons et affiche la vue <code>view_bdl</code> pour éditer/consulter.</p>
+            <p><code>action_download_bdl($id_bdl)</code>: génère le fichier pdf du bdl.</p>
+            <p><code>action_clients()</code>: affiche la vue <code>View_supplier_clients</code> informations connues des interlocuteurs.</p>
+
+            <h4>Controllers_commercial</h4>
+            <p><code>action_default()</code>: appelle la fonction <code>action_dashboard()</code>.</p>
+            <p><code>action_dashboard()</code>: récupère 5 lignes d’un tableau avec les textes de la page et affiche la vue <code>view_commercial_dashboard</code>.</p>
+            <p><code>action_mission()</code>: affiche la vue <code>view_mission</code> qui affiche les informations sur une mission.</p>
+            <p><code>action_add_prestataire()</code>: affiche un formulaire pour.</p>
+
+            <h4>Controllers_manager</h4>
+            <p><code>action_default()</code>: appelle la fonction <code>action_dashboard()</code>.</p>
+            <p><code>action_dashboard()</code>: récupère un tableau avec les textes de la page et affiche le tableau de bord du gestionnaire.</p>
+            <p><code>action_add_supplier($supplier)</code>: ajoute un prestataire à une mission.</p>
+            <p><code>action_add_client_contact($contact)</code>: ajouter un interlocuteur à une composante.</p>
+            <p><code>action_add_client($commercial)</code>: ajoute un client avec au moins une composante un commercial.</p>
+            <p><code>action_add_component($commercial, $client)</code>: ajoute une composante avec un commercial à un client.</p>
+            <p><code>action_edit_client($client)</code>: permet de modifier un client.</p>
+            <p><code>action_supplier_bdl()</code>.</p>
+
+            <h4>Controllers_admin</h4>
+            <p><code>action_default()</code>: appelle la fonction <code>action_dashboard()</code>.</p>
+            <p><code>action_dashboard()</code>: récupère un tableau avec les textes de la page et affiche le tableau de bord de l’admin.</p>
+        </section>
+
+        <section>
+            <h3>Views</h3>
+            <h4>View_login</h4>
+            <p>Présente le formulaire de connexion, Utilisé par <code>Controllers_login</code>.</p>
+            <h4>View_client_contact_dashboard</h4>
+            <p>Présente le dashboard du rôle interlocuteur client Utilisé par <code>Controllers_client_contact</code>.</p>
+            <h4>View_client_contact_edit</h4>
+            <p>Présente le formulaire pour saisir les données à modifier Utilisé par <code>Controllers_client_contact</code>.</p>
+            <h4>View_supplier_dashboard</h4>
+            <p>Présente le dashboard du prestataire Utilisé par <code>Controllers_supplier</code>.</p>
+            <h4>View_bdl</h4>
+            <p>Présente la page d’édition/consultation de la bdl choisie Utilisé par <code>Controllers_supplier, Controllers_client_contact</code>.</p>
+            <h4>View_commercial</h4>
+            <p>Présente le dashboard du commercial Utilisé par <code>Controllers_manager</code>.</p>
+            <h4>View_admin_dashboard</h4>
+            <p>Présente le dashboard de l’administrateur Utilisé par <code>Controllers_admin</code>.</p>
+            <
+

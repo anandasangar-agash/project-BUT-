@@ -1,0 +1,220 @@
+.login-container {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container h1 {
+    text-shadow: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 55vh;
+    background-color: #ffffff;
+    gap: 10px;
+    /* Ajustez l'espacement vertical entre les éléments */
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25);
+    margin: auto;
+    min-width: 550px;
+}
+
+.container>h1 {
+    color: black;
+    margin-bottom: 1%;
+    margin-top: 5%;
+}
+
+.container>h3 {
+    margin-bottom: 3rem;
+}
+
+/* bouton */
+.button {
+    display: block;
+    margin: 0 auto;
+    /* Pour centrer le bouton horizontalement */
+}
+
+/* Clearfix */
+.cf:after,
+.cf:before {
+    content: "";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.input-login {
+    width: 100%;
+    transition: all .3s ease;
+}
+
+.input-login:focus,
+.input-login:hover {
+    background-color: #dddada;
+}
+
+label {
+    position: absolute;
+    left: 20px;
+    color: #a0a0a0;
+    height: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: .2s;
+    font-family: Regular, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.oublie {
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.login-form {
+    height: 60%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.login-form button {
+    margin-top: 15px;
+    /* Ajouter une marge en haut au bouton */
+    margin-bottom: 5px;
+    /* Ajuster la marge en bas du bouton */
+}
+
+.up {
+    left: 20px;
+    transform: translateY(-22px);
+    font-size: 12px;
+    background-color: #24242c;
+}
+
+h3 {
+    color: rgb(171, 171, 171);
+    font-weight: lighter;
+    font-size: var(--font-size--normal);
+}
+
+.popup-roles {
+    list-style: none;
+    width: 110%;
+    height: 80%;
+    position: absolute;
+    background: #ffffff;
+    border-radius: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+
+.form-select {
+    width: 300px;
+    height: var(--height-button);
+    border: 0px;
+    border-radius: 10px;
+    appearance: none;
+    padding-left: 2%;
+    font-family: 'Montserrat', sans-serif;
+    color: #2c2c2c;
+    box-shadow: var(--shadow-regular);
+}
+
+.img-popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.img-popup>img {
+    height: 15rem;
+    width: 15rem;
+}
+
+.popup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35rem;
+    min-height: 80vh;
+}
+
+.container-popup {
+    border-radius: 10px;
+    width: 50rem;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    position: relative;
+}
+
+.form-popup {
+    background-color: white;
+    border: 5px solid #5c7bb7;
+    border-radius: 10px;
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.popup-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    color: black;
+    text-shadow: none;
+    font-family: 'Montserrat', serif;
+    margin-top: 5%;
+}
+
+.background-blur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    backdrop-filter: blur(10px);
+    position: absolute;
+}
+
+.container-select-button {
+    display: flex;
+    gap: var(--spacer-2);
+}
+
+.alert {
+    color: red;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        min-width: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+}
